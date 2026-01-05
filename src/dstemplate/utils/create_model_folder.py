@@ -1,8 +1,5 @@
 from pathlib import Path
 
-def create_model_folder():
-    folder = Path("model")
-    
+def create_model_folder(root="."):
+    folder = Path(root) / "model"
     folder.mkdir(parents=True, exist_ok=True)
-    
-    print("Folder model successfully created 🚀")
